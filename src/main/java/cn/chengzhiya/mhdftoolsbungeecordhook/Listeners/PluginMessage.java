@@ -42,7 +42,6 @@ public final class PluginMessage implements Listener {
 
         try {
             String subchannel = in.readUTF();
-            System.out.println(subchannel);
 
             if (subchannel.equals("ServerName")) {
                 ServerInfo Server = getServerInfo(event);
