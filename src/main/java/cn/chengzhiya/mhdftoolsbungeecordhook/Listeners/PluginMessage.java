@@ -126,6 +126,8 @@ public final class PluginMessage implements Listener {
                 out.writeDouble(in.readDouble());
                 out.writeDouble(in.readDouble());
                 out.writeDouble(in.readDouble());
+                out.writeDouble(in.readFloat());
+                out.writeDouble(in.readFloat());
                 Server.sendData("BungeeCord", out.toByteArray());
             }
             if (subchannel.equals("SaveLocation")) {
