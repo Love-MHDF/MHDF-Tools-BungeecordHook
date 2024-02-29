@@ -126,8 +126,8 @@ public final class PluginMessage implements Listener {
                 out.writeDouble(in.readDouble());
                 out.writeDouble(in.readDouble());
                 out.writeDouble(in.readDouble());
-                out.writeDouble(in.readFloat());
-                out.writeDouble(in.readFloat());
+                out.writeDouble(in.readDouble());
+                out.writeDouble(in.readDouble());
                 Server.sendData("BungeeCord", out.toByteArray());
             }
             if (subchannel.equals("SaveLocation")) {
@@ -152,8 +152,8 @@ public final class PluginMessage implements Listener {
                 out.writeDouble(in.readDouble());
                 out.writeDouble(in.readDouble());
                 out.writeDouble(in.readDouble());
-                out.writeDouble(in.readFloat());
-                out.writeDouble(in.readFloat());
+                out.writeDouble(in.readDouble());
+                out.writeDouble(in.readDouble());
                 for (Map.Entry one : main.main.getProxy().getServers().entrySet()) {
                     ServerInfo Server = (ServerInfo) one.getValue();
                     Server.sendData("BungeeCord", out.toByteArray());
